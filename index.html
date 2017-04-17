@@ -7,7 +7,7 @@
   <body>
     <header class="header container">
       <a class="header-company-logo">Device</a>
-      <form class="header-search">
+      <form class="search">
         <label>
           <input type="search" placeholder="Поиск по сайту">
         </label>
@@ -57,19 +57,25 @@
     </header>
     <main>
       <div class="container">
-        <div class="main-promo-slider">
+        <div class="promo-slider">
           <div class="promo-slider-switches">
-            <button type="button"></button>
-            <button type="button"></button>
-            <button type="button"></button>
+            <label>
+              <input type="radio">
+            </label>
+            <label>
+              <input type="radio">
+            </label>
+            <label>
+              <input type="radio">
+            </label>
           </div>
           <div class="promo-slider-item">
             <img class="item-picture" src="http://placehold.it/150x100" alt="">
-            <section class="item-description">
-              <h2>Делай селфи, как Бен Стиллер!</h2>
+            <div class="item-description">
+              <b>Делай селфи, как Бен Стиллер!</b>
               <p>Самая длинная палка для селфи доступна в нашем магазине.
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <a class="item-btn" href="#">Подробнее</a>
+              <a class="index-btn" href="#">Подробнее</a>
               <ul class="item-specifications">
                 <li>
                   <b>8,5 м</b>
@@ -84,31 +90,31 @@
                   <p>Материал</p>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
           <div class="promo-slider-item">
             <img class="item-picture" src="http://placehold.it/150x100" alt="">
-            <section class="item-description">
-              <h2>Худеем правильно!</h2>
+            <div class="item-description">
+              <b>Худеем правильно!</b>
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                 не пропускать занятия и соблюдать диету.</p>
-              <a class="item-btn" href="#">Подробнее</a>
+              <a class="index-btn" href="#">Подробнее</a>
               <ul class="item-specifications">
                 <li>
                   <b>48 часов</b>
                   <p>Без подзарядки</p>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
           <div class="promo-slider-item">
             <img class="item-picture" src="http://placehold.it/150x100" alt="">
-            <section class="item-description">
-              <h2>Порхает как бабочка,
-                жалит как пчела!</h2>
+            <div class="item-description">
+              <b>Порхает как бабочка,
+                жалит как пчела!</b>
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <a class="item-btn" href="#">Подробнее</a>
+              <a class="index-btn" href="#">Подробнее</a>
               <ul class="item-specifications">
                 <li>
                   <b>800 м</b>
@@ -119,7 +125,7 @@
                   <p>Радиус поражения</p>
                 </li>
               </ul>
-            </section>
+            </div>
           </div>
         </div>
         <ul class="main-catalog">
@@ -143,12 +149,18 @@
           </li>
         </ul>
       </div>
-      <div class="main-services">
+      <div class="services">
         <div class="container">
           <div class="services-switches">
-            <button type="button">Доставка</button>
-            <button type="button">Гарантия</button>
-            <button type="button">Кредит</button>
+            <label>
+              <input type="radio"> Доставка
+            </label>
+            <label>
+              <input type="radio"> Гарантия
+            </label>
+            <label>
+              <input type="radio"> Кредит
+            </label>
           </div>
           <section class="services-item delivery">
             <h2>Доставка</h2>
@@ -177,7 +189,7 @@
           <a class="main-gopro" href="#">GoPro</a>
           <a class="main-vive" href="#">VIVE</a>
         </div>
-        <div class="main-company">
+        <div class="company">
           <section class="company-description">
             <h2>О нас</h2>
             <p>Огромный выбор гаджетов не оставит равнодушным гика,
@@ -189,7 +201,7 @@
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
             </ul>
-            <a class="company-btn" href="#">Подробнее о нас</a>
+            <a class="index-btn" href="#">Подробнее о нас</a>
           </section>
           <section class="company-contacts">
             <h2>Контакты</h2>
@@ -198,7 +210,7 @@
             <a class="company-location" href="#">
               <img src="http://placehold.it/150x100" alt="">
             </a>
-            <a class="company-btn" href="#">Напишите нам</a>
+            <a class="index-btn" href="#">Напишите нам</a>
           </section>
         </div>
       </div>
@@ -207,7 +219,7 @@
       <div class="container">
         <div class="footer-left-col">
           <a class="footer-company-logo">Device</a>
-          <p class="footer-company-address">г. Москва, ул. Строителей, 15</p>
+          <p class="company-address">г. Москва, ул. Строителей, 15</p>
         </div>
         <div class="footer-center-col">
           <ul class="footer-navigation">
@@ -221,10 +233,10 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <div class="footer-social">
-            <a class="footer-fb" href="#">Facebook</a>
-            <a class="footer-inst" href="#">Instagram</a>
-            <a class="footer-tw" href="#">Twitter</a>
+          <div class="social">
+            <a class="btn-fb" href="#">Facebook</a>
+            <a class="btn-inst" href="#">Instagram</a>
+            <a class="btn-tw" href="#">Twitter</a>
           </div>
         </div>
         <div class="footer-right-col">
@@ -233,22 +245,28 @@
             <a class="footer-compare" href="#">Сравнить</a>
             <a class="footer-shopping-cart" href="#">Корзина</a>
           </div>
+          <p class="footer-company-telephone">Тел.: +7 (495) 495-95-95</p>
+          <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">Лендинг интенсива «Базовый HTML и CSS»</a>
         </div>
-        <p class="footer-company-telephone">Тел.: +7 (495) 495-95-95</p>
-        <a class="footer-copyright" href="https://htmlacademy.ru/intensive/htmlcss">Лендинг интенсива «Базовый HTML и CSS»</a>
       </div>
     </footer>
     <div class="write-company">
-      <a class="close-btn" href="#">Закрыть</a>
-      <form>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Ваше e-mail:</label>
-        <input type="email" id="email" name="email">
-        <label for="letter">Текс письма:</label>
-        <textarea id="letter" name="letter"></textarea>
-        <button type="submit">Отправить</button>
-      </form>
+      <a class="btn-close" href="#">Закрыть</a>
+      <div class="container">
+        <form>
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" name="name">
+          <label for="email">Ваше e-mail:</label>
+          <input type="email" id="email" name="email">
+          <label for="letter">Текс письма:</label>
+          <textarea id="letter" name="letter"></textarea>
+          <button class="index-btn" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+    <div class="map">
+      <a class="btn-close" href="index.html">Закрыть</a>
+      <img src="http://placehold.it/150x100" alt="">
     </div>
   </body>
 </html>
