@@ -1497,7 +1497,7 @@ ul.header-catalog-second-col {
 }
 
 .content-top {
-  background-color: antiquewhite;
+  background: linear-gradient(to right, rgba(220, 220, 220, 1) calc(50% - 600px + 348px), rgba(235, 235, 235, 1) calc(50% - 600px + 348px));
 }
 
 .content-top .container {
@@ -1646,7 +1646,7 @@ ul.header-catalog-second-col {
 }
 
 .content-middle {
-  background-color: lavenderblush;
+  background: linear-gradient(to right, rgba(238, 238, 238, 1) calc(50% - 600px + 348px), rgba(255, 255, 255, 1) calc(50% - 600px + 348px));
 }
 
 .content-middle .container {
