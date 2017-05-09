@@ -12,22 +12,24 @@
         <a class="header-logo">
           <img src="img/header-logo.png" width="163" height="36" alt="Device">
         </a>
-        <form class="search" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-id"></label>
-          <input class="search-input" type="search" id="search-id" name="search" placeholder="Поиск по сайту">
-          <button class="search-submit" type="submit">Найти</button>
-        </form>
-        <ul class="header-user-block">
-          <li class="header-log-in">
-            <a href="#">Войти</a>
-          </li>
-          <li class="header-compare">
-            <a href="#">Сравнить</a>
-          </li>
-          <li class="header-cart">
-            <a href="#">Корзина</a>
-          </li>
-        </ul>
+        <div class="header-top">
+          <form class="search" action="https://echo.htmlacademy.ru" method="get">
+            <label for="search-id"></label>
+            <input class="search-input" type="search" id="search-id" name="search" placeholder="Поиск по сайту">
+            <button class="search-submit" type="submit">Найти</button>
+          </form>
+          <ul class="header-user-block">
+            <li class="header-log-in">
+              <a href="#">Войти</a>
+            </li>
+            <li class="header-compare">
+              <a href="#">Сравнить</a>
+            </li>
+            <li class="header-cart">
+              <a href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
         <nav class="header-navigation">
           <ul>
             <li class="header-navigation-li nav-catalog">
@@ -78,30 +80,28 @@
           <input type="radio" id="promo-btn-1" name="promo-toggle" checked>
           <input type="radio" id="promo-btn-2" name="promo-toggle">
           <input type="radio" id="promo-btn-3" name="promo-toggle">
+          <ul class="promo-controls">
+            <li>
+              <label for="promo-btn-1"></label>
+            </li>
+            <li>
+              <label for="promo-btn-2"></label>
+            </li>
+            <li>
+              <label for="promo-btn-3"></label>
+            </li>
+          </ul>
           <div class="promo-item promo-monopod">
             <img class="promo-item-img" src="img/promo-monopod.png" width="384" height="486" alt="Изображение товара">
-            <div class="promo-item-description">
-              <b class="promo-item-slogan">Делай селфи,<br>
-                                           как Бен Стиллер!
-              </b>
-              <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
-                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              </p>
-              <div class="promo-buttons">
-                <a class="btn promo-btn" href="#">
-                  <span>Подробнее</span>
-                </a>
-                <ul class="promo-controls">
-                  <li>
-                    <label for="promo-btn-1"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-2"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-3"></label>
-                  </li>
-                </ul>
+            <div class="promo-item-info">
+              <div class="promo-item-description">
+                <b class="promo-item-slogan">Делай селфи, как Бен Стиллер!
+                </b>
+                <p class="promo-item-description-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь
+                                                       (Восемь, Карл!) метров длиной и весом
+                                                       всего 5 килограмм.
+                </p>
+                <a class="btn promo-btn" href="#">Подробнее</a>
               </div>
               <ul class="promo-item-specifications">
                 <li>
@@ -122,28 +122,13 @@
           <div class="promo-item promo-fitness-bracelet">
             <img class="promo-item-img" src="img/promo-fitness-bracelet.png" width="345" height="485"
                  alt="Изображение товара">
-            <div class="promo-item-description">
-              <b class="promo-item-slogan">Худеем<br>
-                                           правильно!
-              </b>
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
-                не пропускать занятия и соблюдать диету.
-              </p>
-              <div class="promo-buttons">
-                <a class="btn promo-btn" href="#">
-                  <span>Подробнее</span>
-                </a>
-                <ul class="promo-controls">
-                  <li>
-                    <label for="promo-btn-1"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-2"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-3"></label>
-                  </li>
-                </ul>
+            <div class="promo-item-info">
+              <div class="promo-item-description">
+                <b class="promo-item-slogan">Худеем правильно!</b>
+                <p class="promo-item-description-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
+                                                       пропускать занятия и соблюдать диету.
+                </p>
+                <a class="btn promo-btn" href="#">Подробнее</a>
               </div>
               <ul class="promo-item-specifications">
                 <li>
@@ -156,27 +141,17 @@
           <div class="promo-item promo-quadrocopter">
             <img class="promo-item-img" src="img/promo-quadrocopter.png" width="526" height="334"
                  alt="Изображение товара">
-            <div class="promo-item-description">
-              <b class="promo-item-slogan">Порхает как бабочка,<br>
-                                           жалит как пчела!
-              </b>
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                 мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="promo-buttons">
-                <a class="btn promo-btn" href="#">
-                  <span>Подробнее</span>
-                </a>
-                <ul class="promo-controls">
-                  <li>
-                    <label for="promo-btn-1"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-2"></label>
-                  </li>
-                  <li>
-                    <label for="promo-btn-3"></label>
-                  </li>
-                </ul>
+            <div class="promo-item-info">
+              <div class="promo-item-description">
+                <b class="promo-item-slogan">Порхает как бабочка,
+                  <br>
+                                             жалит как пчела!
+                </b>
+                <p class="promo-item-description-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
+                                                       лазером, замаскированным под стандартную
+                                                       камеру.
+                </p>
+                <a class="btn promo-btn" href="#">Подробнее</a>
               </div>
               <ul class="promo-item-specifications">
                 <li>
@@ -193,23 +168,49 @@
         </div>
         <ul class="main-catalog">
           <li class="main-catalog-item">
-            <a href="#">Виртуальная реальность</a>
+            <a class="main-catalog-item-link" href="#">
+              <img class="main-catalog-item-img" src="img/virtual-reality.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Виртуальная реальность</b>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a href="#">Моноподы<br>
-                    для селфи</a>
+            <a class="main-catalog-item-link" href="catalog.html">
+              <img class="main-catalog-item-img" src="img/monopods.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Моноподы
+                <br>
+                                                 для селфи
+              </b>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a href="#">Экшн-камеры</a>
+            <a class="main-catalog-item-link" href="#">
+              <img class="main-catalog-item-img" src="img/action-cameras.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Экшн-камеры</b>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a href="#">Фитнес-браслеты</a>
+            <a class="main-catalog-item-link" href="#">
+              <img class="main-catalog-item-img" src="img/fitness-bracelets.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Фитнес-браслеты</b>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a href="#">Умные часы</a>
+            <a class="main-catalog-item-link" href="#">
+              <img class="main-catalog-item-img" src="img/smart-watches.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Умные часы</b>
+            </a>
           </li>
           <li class="main-catalog-item">
-            <a href="#">Квадрокоптеры</a>
+            <a class="main-catalog-item-link" href="#">
+              <img class="main-catalog-item-img" src="img/quadrocopters.png" width="160" height="160"
+                   alt="Изображение раздела">
+              <b class="main-catalog-item-title">Квадрокоптеры</b>
+            </a>
           </li>
         </ul>
       </div>
@@ -219,15 +220,9 @@
           <input type="radio" id="services-btn-2" name="services-toggle">
           <input type="radio" id="services-btn-3" name="services-toggle">
           <div class="services-controls">
-            <label class="btn services-controls-btn radio-delivery" for="services-btn-1">
-              <span>Доставка</span>
-            </label>
-            <label class="btn services-controls-btn radio-warranty" for="services-btn-2">
-              <span>Гарантия</span>
-            </label>
-            <label class="btn services-controls-btn radio-credit" for="services-btn-3">
-              <span>Кредит</span>
-            </label>
+            <label class="btn services-controls-btn radio-delivery" for="services-btn-1">Доставка</label>
+            <label class="btn services-controls-btn radio-warranty" for="services-btn-2">Гарантия</label>
+            <label class="btn services-controls-btn radio-credit" for="services-btn-3">Кредит</label>
           </div>
           <section class="services-item delivery">
             <h2>Доставка</h2>
@@ -241,15 +236,18 @@
             <h2>Гарантия</h2>
             <p>
               Если из-за возгарания купленного у нас товара у вас сгорит
-              дом — не переживайте, мы выдадим вам новый.<br>
+              дом — не переживайте, мы выдадим вам новый.
+              <br>
               Товар, не дом, конечно же.
             </p>
           </section>
           <section class="services-item credit">
             <h2>Кредит</h2>
             <p>
-              Залезть в долговую яму стало проще! Кредитные<br>
-              консультанты подберут для вас наиболее выгодные<br>
+              Залезть в долговую яму стало проще! Кредитные
+              <br>
+              консультанты подберут для вас наиболее выгодные
+              <br>
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </section>
@@ -259,8 +257,8 @@
         <ul class="partners">
           <li class="partners-item dji">
             <a>
-            <img src="img/dji.png" width="260" height="100" alt="DJI">
-          </a>
+              <img src="img/dji.png" width="260" height="100" alt="DJI">
+            </a>
           </li>
           <li class="partners-item spgadgets">
             <a>
@@ -296,20 +294,16 @@
                 <span>ЖелДорЭкспедиция</span>
               </li>
             </ul>
-            <a class="btn company-item-btn" href="#">
-              <span>Подробнее о нас</span>
-            </a>
+            <a class="btn company-item-btn" href="#">Подробнее о нас</a>
           </section>
           <section class="company-item company-contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
                проверить работоспособность покупки. Всякое бывает.</p>
             <a class="company-location" href="#">
-              <img src="img/location-preview.jpg" width="560" height="222" alt="Расположение Device">
+              <img src="img/small-map.png" width="560" height="222" alt="Расположение Device">
             </a>
-            <a class="btn company-item-btn" href="#">
-              <span>Напишите нам</span>
-            </a>
+            <a class="btn company-item-btn" href="#">Напишите нам</a>
           </section>
         </div>
       </div>
