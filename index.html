@@ -359,23 +359,37 @@
         </div>
       </div>
     </footer>
-    <div class="write-company">
-      <a class="btn-close" href="#">Закрыть</a>
-      <div class="container">
-        <form>
-          <label for="name">Ваше имя:</label>
-          <input type="text" id="name" name="name">
-          <label for="email">Ваше e-mail:</label>
-          <input type="email" id="email" name="email">
-          <label for="letter">Текс письма:</label>
-          <textarea id="letter" name="letter"></textarea>
-          <button class="index-btn" type="submit">Отправить</button>
+    <div class="write-company modal-overlay">
+      <div class="write-company-container">
+        <div class="btn-close-container">
+          <a class="btn-close" href="#">Закрыть</a>
+        </div>
+        <form class="write-company-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="write-company-top">
+            <div class="write-company-name">
+              <label for="name-id">Ваше имя:</label>
+              <input type="text" id="name-id" name="name" placeholder="Представьтесь, пожалуйста">
+            </div>
+            <div class="write-company-email">
+              <label for="email-id">Ваш e-mail:</label>
+              <input type="email" id="email-id" name="email" placeholder="Для отправки ответа">
+            </div>
+          </div>
+          <div class="write-company-letter">
+            <label for="letter-id">Текст письма:</label>
+            <textarea id="letter-id" name="letter" placeholder="В свободной форме"></textarea>
+          </div>
+          <button class="btn write-company-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-    <div class="map">
-      <a class="btn-close" href="index.html">Закрыть</a>
-      <img src="img/location.jpg" width="960" height="559" alt="Расположение Device">
+    <div class="map modal-overlay">
+      <div class="map-container">
+        <div class="btn-close-container">
+          <a class="btn-close" href="#">Закрыть</a>
+        </div>
+        <img src="img/big-map.png" width="960" height="559" alt="Расположение Device">
+      </div>
     </div>
   </body>
 </html>
