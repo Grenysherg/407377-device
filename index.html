@@ -369,16 +369,17 @@
             <div class="write-company-top">
               <div class="write-company-name">
                 <label for="name-id">Ваше имя:</label>
-                <input class="" type="text" id="name-id" name="name" placeholder="Представьтесь, пожалуйста">
+                <input class="input-normal" type="text" id="name-id" name="name"
+                       placeholder="Представьтесь, пожалуйста">
               </div>
               <div class="write-company-email">
                 <label for="email-id">Ваш e-mail:</label>
-                <input type="email" id="email-id" name="email" placeholder="Для отправки ответа">
+                <input class="input-normal" type="email" id="email-id" name="email" placeholder="Для отправки ответа">
               </div>
             </div>
             <div class="write-company-letter">
               <label for="letter-id">Текст письма:</label>
-              <textarea id="letter-id" name="letter" placeholder="В свободной форме"></textarea>
+              <textarea class="input-normal" id="letter-id" name="letter" placeholder="В свободной форме"></textarea>
             </div>
             <button class="btn write-company-btn" type="submit">Отправить</button>
           </form>
@@ -386,11 +387,17 @@
       </div>
     </div>
     <div class="map modal-overlay">
-      <div class="map-container">
-        <div class="btn-close-container">
-          <a class="btn-close" href="#">Закрыть</a>
+      <div class="modal-container">
+        <div class="map-container">
+          <div class="btn-close-container">
+            <a class="btn-close" href="#">Закрыть</a>
+          </div>
+          <img src="img/big-map.png" width="960" height="559" alt="Расположение Device">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779912!2d37.52742931591111!3d55.
+            68703098053583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!
+            2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1494530910576"
+            width="960" height="559" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
-        <img src="img/big-map.png" width="960" height="559" alt="Расположение Device">
       </div>
     </div>
     <script src="js/scripts.js"></script>

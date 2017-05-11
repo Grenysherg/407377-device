@@ -30,6 +30,24 @@
   url("../fonts/opensans.woff") format("woff");
 }
 
+@keyframes emergence {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -2660,12 +2678,6 @@ ul.header-catalog-second-col {
   display: none;
 }
 
-.modal-show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .write-company-container {
   position: relative;
   
@@ -2689,6 +2701,7 @@ ul.header-catalog-second-col {
   position: absolute;
   top: 22px;
   right: 22px;
+  z-index: 1000;
 }
 
 .write-company-top {
@@ -2730,7 +2743,7 @@ ul.header-catalog-second-col {
 
 .write-company-form label {
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   
   font-style: normal;
   font-weight: 800;
@@ -2760,7 +2773,6 @@ ul.header-catalog-second-col {
   color: rgba(70, 70, 70, 1);
   text-transform: none;
   
-  background-color: rgba(229, 229, 229, 0.5);
   border: 3px solid transparent;
 }
 
@@ -2780,26 +2792,35 @@ ul.header-catalog-second-col {
   color: rgba(70, 70, 70, 1);
   text-transform: none;
   
-  background-color: rgba(229, 229, 229, 0.5);
   border: 3px solid transparent;
 }
 
-
-.write-company-form input:hover,
-.write-company-letter textarea:hover {
-  background-color: rgba(229, 229, 229, 0.8);
-}
-
-.write-company-form input:focus,
-.write-company-letter textarea:focus {
-  background-color: rgba(255, 255, 255, 1);
-  border-color: rgba(247, 226, 150, 1);
-  
-  outline: none;
+.input-normal {
+  background-color: rgba(229, 229, 229, 0.5);
 }
 
 .input-error {
   background-color: rgba(237, 181, 181, 0.5);
+}
+
+.write-company-form input.input-normal:hover,
+.write-company-letter textarea.input-normal:hover {
+  background-color: rgba(229, 229, 229, 0.8);
+}
+
+.write-company-form input.input-error:hover,
+.write-company-letter textarea.input-error:hover {
+  background-color: rgba(237, 181, 181, 0.8);
+}
+
+.write-company-form input.input-normal:focus,
+.write-company-letter textarea.input-normal:focus,
+.write-company-form input.input-error:focus,
+.write-company-letter textarea.input-error:focus {
+  background-color: rgba(255, 255, 255, 1);
+  border-color: rgba(247, 226, 150, 1);
+  
+  outline: none;
 }
 
 .write-company-form input::-webkit-input-placeholder {
@@ -2866,5 +2887,20 @@ ul.header-catalog-second-col {
   
   -webkit-box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
   box-shadow: 0 10px 20px rgba(4, 6, 6, 0.2);
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  
+  animation-name: emergence;
+  animation-duration: 0.2s;
 }
 
