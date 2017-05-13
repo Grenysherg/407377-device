@@ -31,9 +31,8 @@
           </ul>
         </div>
         <nav class="header-navigation">
-          <ul>
-            <li class="header-navigation-li nav-catalog">
-              <a href="catalog.html">Каталог товаров</a>
+            <div class="header-navigation-item header-navigation-left nav-catalog">
+              <a class="header-navigation-title" href="catalog.html">Каталог товаров</a>
               <div class="header-catalog">
                 <ul class="header-catalog-first-col">
                   <li>
@@ -60,15 +59,16 @@
                   </li>
                 </ul>
               </div>
-            </li>
+            </div>
+          <ul class="header-navigation-item header-navigation-right">
             <li class="header-navigation-li nav-delivery">
-              <a href="delivery.html">Доставка</a>
+              <a class="header-navigation-title" href="delivery.html">Доставка</a>
             </li>
             <li class="header-navigation-li nav-warranty">
-              <a href="warranty.html">Гарантия</a>
+              <a class="header-navigation-title" href="warranty.html">Гарантия</a>
             </li>
             <li class="header-navigation-li nav-contacts">
-              <a href="contacts.html">Контакты</a>
+              <a class="header-navigation-title" href="contacts.html">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -80,6 +80,7 @@
           <input type="radio" id="promo-btn-1" name="promo-toggle" checked>
           <input type="radio" id="promo-btn-2" name="promo-toggle">
           <input type="radio" id="promo-btn-3" name="promo-toggle">
+          
           <ul class="promo-controls">
             <li>
               <label for="promo-btn-1"></label>
@@ -359,7 +360,7 @@
         </div>
       </div>
     </footer>
-    <div class="write-company modal-overlay">
+    <div class="write-company modal-overlay modal-close">
       <div class="modal-container">
         <div class="write-company-container">
           <div class="btn-close-container">
@@ -386,7 +387,7 @@
         </div>
       </div>
     </div>
-    <div class="map modal-overlay">
+    <div class="map modal-overlay modal-close">
       <div class="modal-container">
         <div class="map-container">
           <div class="btn-close-container">

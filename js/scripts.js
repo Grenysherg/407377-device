@@ -12,6 +12,7 @@ var mapClose = mapModal.querySelector(".btn-close");
 
 writeCompanyLink.addEventListener("click", function(event) {
   event.preventDefault();
+  writeCompanyModal.classList.remove("vanishing");
   writeCompanyModal.classList.add("modal-show");
   writeCompanyName.focus();
 });
@@ -45,14 +46,17 @@ writeCompanyClose.addEventListener("click", function(event) {
   writeCompanyEmail.classList.remove("input-error");
   writeCompanyLetter.classList.remove("input-error");
   writeCompanyModal.classList.remove("modal-show");
+  writeCompanyModal.classList.add("vanishing");
 });
 
 mapLink.addEventListener("click", function(event) {
   event.preventDefault();
+  mapModal.classList.remove("vanishing");
   mapModal.classList.add("modal-show");
 });
 
 mapClose.addEventListener("click", function(event) {
   event.preventDefault();
   mapModal.classList.remove("modal-show");
+  mapModal.classList.add("vanishing");
 });
